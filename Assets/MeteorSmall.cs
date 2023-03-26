@@ -14,7 +14,7 @@ public class MeteorSmall : MonoBehaviour
         if (transform.position.y < 0) movement.y = Random.Range(5f, 10f);
         else movement.y = Random.Range(-10f, -5f);
         rotateSpeed = Random.Range(-40f, 40f);
-        speed = Random.Range(7f, 10f);
+        speed = Random.Range(5f, 8f);
     }
 
     void Update()
