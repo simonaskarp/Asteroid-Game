@@ -3,8 +3,10 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     public float velocity;
-    //public float acc;
     public Rigidbody2D rb;
+    public Transform shootingPoint;
+    public GameObject bullet;
+
 
     private void Update()
     {
@@ -13,6 +15,11 @@ public class Player : MonoBehaviour
         var movementV = Input.GetAxis("Vertical");
 
         transform.position += new Vector3(movementH, movementV, 0) * Time.deltaTime * velocity;
+
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            Instantiate(bullet, shootingPoint.position, transform.rotation);
+        }
     }
 
     void FaceMouse()
