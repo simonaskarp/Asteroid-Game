@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 7909044504175436861}
   m_Layer: 0
   m_Name: Big Meteor
-  m_TagString: Untagged
+  m_TagString: Meteor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -137,5 +137,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 4487669462734320569}
-  rotateSpeed: 15
-  speed: 1
+  smallMeteor: {fileID: 652785651854202648, guid: 473eebec24dbb794895cea003232726e, type: 3}
+  numberOfPieces: 3
